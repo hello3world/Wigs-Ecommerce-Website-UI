@@ -1,0 +1,46 @@
+/* ---------  FONTS  --------- */
+@font-face {
+  font-family: 'Circular Std';
+  src: url('CircularStd-Medium.eot');
+  src: local('Circular Std Medium'), local('CircularStd-Medium'),
+    url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('CircularStd-Medium.woff2') format('woff2'),
+    url('CircularStd-Medium.woff') format('woff'),
+    url('CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Bold';
+  src: url('Sofia-Bold.eot');
+  src: local('Sofia Bold'), local('Sofia-Bold'),
+    url('Sofia-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Sofia-Bold.woff') format('woff'),
+    url('Sofia-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Medium';
+  src: url('Sofia-Medium.eot');
+  src: local('Sofia Medium'), local('Sofia-Medium'),
+    url('Sofia-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Sofia-Medium.woff') format('woff'),
+    url('Sofia-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ---------  COMMON  --------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sofia Medium', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+}
