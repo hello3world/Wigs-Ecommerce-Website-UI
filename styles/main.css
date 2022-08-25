@@ -1,46 +1,121 @@
 /* ---------  FONTS  --------- */
 @font-face {
   font-family: 'Circular Std';
-  src: url('CircularStd-Medium.eot');
+  src: url('/fonts/сircularStd/CircularStd-Medium.eot');
   src: local('Circular Std Medium'), local('CircularStd-Medium'),
-    url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
-    url('CircularStd-Medium.woff2') format('woff2'),
-    url('CircularStd-Medium.woff') format('woff'),
-    url('CircularStd-Medium.ttf') format('truetype');
+    url('/fonts/сircularStd/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/сircularStd/CircularStd-Medium.woff2') format('woff2'),
+    url('/fonts/сircularStd/CircularStd-Medium.woff') format('woff'),
+    url('/fonts/сircularStd/CircularStd-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Bold';
-  src: url('Sofia-Bold.eot');
+  src: url('/fonts/sofia/Sofia-Bold.eot');
   src: local('Sofia Bold'), local('Sofia-Bold'),
-    url('Sofia-Bold.eot?#iefix') format('embedded-opentype'),
-    url('Sofia-Bold.woff') format('woff'),
-    url('Sofia-Bold.ttf') format('truetype');
+    url('/fonts/sofia/Sofia-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/sofia/Sofia-Bold.woff') format('woff'),
+    url('/fonts/sofia/Sofia-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sofia Medium';
-  src: url('Sofia-Medium.eot');
+  src: url('/fonts/sofia/Sofia-Medium.eot');
   src: local('Sofia Medium'), local('Sofia-Medium'),
-    url('Sofia-Medium.eot?#iefix') format('embedded-opentype'),
-    url('Sofia-Medium.woff') format('woff'),
-    url('Sofia-Medium.ttf') format('truetype');
+    url('/fonts/sofia/Sofia-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/sofia/Sofia-Medium.woff') format('woff'),
+    url('/fonts/sofia/Sofia-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 /* ---------  COMMON  --------- */
 html {
+  /* height: 100%; */
   scroll-behavior: smooth;
 }
 
 body {
+  /* height: 100%; */
+  margin: 0 auto;
+  max-width: 1440px;
   font-family: 'Sofia Medium', sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  font-style: normal;
   color: #000;
+  background-color: #fafafa;
+}
+
+/* ---------  SIDEBAR  --------- */
+.sidebar {
+  max-width: 252px;
+  height: 100vh;
+  /* min-height: 100%; */
+
+}
+
+.sidebar__container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 51px 42px 59px 56px;
+}
+
+.logo {
+  /* flex: 0 0 auto; */
+}
+
+.logo__image {
+  margin-bottom: 57px;
+}
+
+.nav-column {
+  flex: 1 0 auto;
+}
+
+.nav-column__title {}
+
+.nav-column__list {}
+
+.nav-column__item {
+  height: 27px;
+  margin-bottom: 25px;
+}
+
+.nav-column__link {
+font-size: 15px;
+line-height: 1.6;
+transition: color 0.2s ease-in;
+}
+
+.nav-column__link:hover {
+  color: #FD2E24;
+}
+
+.nav-column__icon {
+  width: 26px;
+    height: auto;
+    object-fit: none;
+  vertical-align: middle;
+  margin-right: 13px;
+
+}
+
+.helpCenter {
+  /* flex: 0 0 auto; */
+}
+
+.helpCenter__link {
+  font-size: 15px;
+line-height: 1.6;
+}
+
+.helpCenter__image {
+  vertical-align: middle;
+  margin-right: 17px;
 }
