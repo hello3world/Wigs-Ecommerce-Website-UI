@@ -41,8 +41,8 @@ html {
 
 body {
   /* height: 100%; */
-  margin: 0 auto;
-  max-width: 1440px;
+
+
   font-family: 'Sofia Medium', sans-serif;
   font-size: 16px;
   line-height: 1.2;
@@ -51,19 +51,25 @@ body {
   background-color: #fafafa;
 }
 
+.main_wrapper {
+  max-width: 1440px;
+  display: flex;
+  padding: 51px 42px 59px 56px;
+  margin: 0 auto;
+}
+
 /* ---------  SIDEBAR  --------- */
 .sidebar {
   max-width: 252px;
   height: 100vh;
   /* min-height: 100%; */
-
+  margin-right: 80px;
 }
 
 .sidebar__container {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 51px 42px 59px 56px;
 }
 
 .logo {
@@ -88,9 +94,9 @@ body {
 }
 
 .nav-column__link {
-font-size: 15px;
-line-height: 1.6;
-transition: color 0.2s ease-in;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: color 0.2s ease-in;
 }
 
 .nav-column__link:hover {
@@ -99,8 +105,8 @@ transition: color 0.2s ease-in;
 
 .nav-column__icon {
   width: 26px;
-    height: auto;
-    object-fit: none;
+  height: auto;
+  object-fit: none;
   vertical-align: middle;
   margin-right: 13px;
 
@@ -112,10 +118,109 @@ transition: color 0.2s ease-in;
 
 .helpCenter__link {
   font-size: 15px;
-line-height: 1.6;
+  line-height: 1.6;
 }
 
 .helpCenter__image {
   vertical-align: middle;
   margin-right: 17px;
 }
+
+/* ---------  HEADER  --------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.search {
+  width: 490px;
+
+  /* height: 44px; */
+}
+
+.search__label {
+
+  display: flex;
+  /* height: 100%; */
+}
+
+.search__image {
+  margin-right: 17px;
+  /* width: 24px;
+  height: 24px; */
+}
+
+.search__string {
+
+  flex-grow: 1;
+  padding: 0px 40px 0 10px;
+  background-color: transparent;
+
+}
+
+.search__string::placeholder {
+  color: rgba(0, 0, 0, 0.251);
+}
+
+.search__string:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.main-nav {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.main-nav__list {
+  display: flex;
+
+}
+
+.main-nav__item {
+    position: relative;
+    transition: width 0.2s ;
+}
+.main-nav__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in;
+}
+
+.main-nav__item:hover:after {
+
+width: 100%;
+
+}
+
+
+
+.main-nav__item+.main-nav__item {
+  margin-left: 42px;
+}
+
+.main-nav__icon+.main-nav__icon {
+  margin-left: 25px;
+}
+
+.main-nav__item+.main-nav__icon {
+  margin-left: 50px;
+}
+
+.main-nav__item:nth-last-child() {
+  margin-left: 25px;
+}
+
+.main-nav__link {}
